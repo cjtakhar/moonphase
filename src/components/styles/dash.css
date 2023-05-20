@@ -74,7 +74,8 @@
     }
 
     .box1-title {
-        font-size: 4rem;
+        font-size: 3rem;
+        margin: 0 auto;
     }
 
     .box1-paragraph {
