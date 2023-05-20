@@ -1,5 +1,12 @@
 .navigation {
     background: #746f9d;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-collapse {
+    justify-content: space-evenly;
 }
 
 .navbrand {
@@ -25,9 +32,9 @@
 
 .nav-links {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     list-style: none;
-    width: 100vw;
+    width: auto;
     color: white;
     font-weight: bold;
     font-size: 1rem;

@@ -1,5 +1,4 @@
 .box1 {
-    margin-top: 5rem;
     height: 100vh;
     width: 50vw;
     padding: 3rem;
@@ -55,7 +54,7 @@
     border: 2px solid;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1168px) {
     .dash-container {
       flex-direction: column;
       justify-content: center;
