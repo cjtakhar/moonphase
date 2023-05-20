@@ -63,13 +63,21 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-
+      margin: 0;
+      padding: 0;
     }
 
     .box1 {
-        margin-top: 0;
+        margin: 0 auto;
         height: 100vh;
         width: 100vw;
-        padding: 3rem;
     }
+
+    .box1-title {
+        font-size: 4rem;
+    }
+
+    .box1-paragraph {
+        font-size: 1.4rem;
+        }
   }
