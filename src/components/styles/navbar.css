@@ -51,6 +51,7 @@
     border-radius: 25px;
     background-color: white;
     text-align: center;
+    margin-left: 5rem;
 }
 
 .nav-link {
@@ -65,9 +66,4 @@
 .nav-link:hover {
     background-color: white;
     border-radius: 25px;
-}
-
-.nav-link2 {
-    margin: 2px;
-    padding: 2px;
 }
