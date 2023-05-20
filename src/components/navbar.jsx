@@ -7,7 +7,7 @@ import './styles/navbar.css';
 const NavBar = () => {
   return (
     <Navbar className="navigation" expand="lg" variant="light">
-      <Navbar.Brand className="navbrand" as={Link} to="/dash">{ < BsMoonStars />}</Navbar.Brand>
+      <Navbar.Brand className="navbrand" as={Link} to="/moonphase">{ < BsMoonStars />}</Navbar.Brand>
       <Navbar.Toggle className="toggle" aria-controls="basic-navbar-nav" />
       <Navbar.Collapse className="collapse" id="basic-navbar-nav">
         <Nav className="nav-links">

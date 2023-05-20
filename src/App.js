@@ -11,8 +11,8 @@ function App() {
       <BrowserRouter>
       <NavBar />
         <Routes>
+          <Route path="/moonphase" element={ < Dash />} />
           <Route path="/login" element={ < Login />} />
-          <Route path="/dash" element={ < Dash />} />
        </Routes>
       </BrowserRouter>
     </div>
