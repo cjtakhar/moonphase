@@ -80,5 +80,33 @@
 
     .box1-paragraph {
         font-size: 1.4rem;
-        }
+    }
+  }
+
+  @media (max-width: 750px) {
+    .dash-container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .box1 {
+        margin: 0 auto;
+        height: 100vh;
+        width: 100vw;
+        padding: 1rem;
+    }
+
+    .box1-title {
+        font-size: 3rem;
+        margin: 15px auto;
+        padding: 1rem;
+    }
+
+    .box1-paragraph {
+        font-size: 1.4rem;
+        padding: 1rem;
+    }
   }
