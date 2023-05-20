@@ -54,6 +54,10 @@
     border: 2px solid;
 }
 
+.glow {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #746f9d, 0 0 40px #746f9d, 0 0 50px #746f9d, 0 0 60px #746f9d;
+  }
+
 @media (max-width: 1168px) {
     .dash-container {
       flex-direction: column;
