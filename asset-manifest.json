@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/moonphase/static/css/main.f5dee407.css",
-    "main.js": "/moonphase/static/js/main.ae5673a3.js",
+    "main.css": "/moonphase/static/css/main.22c67839.css",
+    "main.js": "/moonphase/static/js/main.03ab706a.js",
     "static/js/787.97b97445.chunk.js": "/moonphase/static/js/787.97b97445.chunk.js",
     "static/media/thumbprint.jpg": "/moonphase/static/media/thumbprint.9a6cda451d9712efc232.jpg",
     "index.html": "/moonphase/index.html",
-    "main.f5dee407.css.map": "/moonphase/static/css/main.f5dee407.css.map",
-    "main.ae5673a3.js.map": "/moonphase/static/js/main.ae5673a3.js.map",
+    "main.22c67839.css.map": "/moonphase/static/css/main.22c67839.css.map",
+    "main.03ab706a.js.map": "/moonphase/static/js/main.03ab706a.js.map",
     "787.97b97445.chunk.js.map": "/moonphase/static/js/787.97b97445.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f5dee407.css",
-    "static/js/main.ae5673a3.js"
+    "static/css/main.22c67839.css",
+    "static/js/main.03ab706a.js"
   ]
 }
