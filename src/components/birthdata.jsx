@@ -48,10 +48,10 @@ const BirthData = () => {
       <div className="bd-intro">
         <h1 className="bd-title">You are cosmic.</h1>
         <p className="bd-paragraph">The fundamental particles that forged the universe are the intricate composition of our being. </p>
-        <div className="btn-container">
+        <div className="bd-btn-container">
           {isDataEntered && (
             <>
-              <button className="form-btn" ref={buttonRef}> 
+              <button className="bd-form-btn" ref={buttonRef}> 
                 <img src={Image} alt="cosmic thumbprint" />
               </button>
               <h2 className="btn-label">PRESS</h2>
