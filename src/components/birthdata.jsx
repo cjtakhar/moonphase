@@ -45,7 +45,7 @@ const BirthData = () => {
     <div className="bd-container">
       <div className="bd-intro">
         <h1 className="bd-title">You are cosmic.</h1>
-        <p className="bd-paragraph">The fundamental particles that forged galaxies, stars, and planets are the intricate composition of our being.</p>
+        <p className="bd-paragraph">The fundamental particles that forged the univere are the intricate composition of our being.</p>
       </div>
       <form className="bd-form" onSubmit={handleSubmit}>
         <div className="first-container">

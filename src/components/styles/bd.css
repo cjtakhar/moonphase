@@ -23,7 +23,8 @@
 
 .bd-paragraph {
     font-size: 1.5rem;
-    color: #746f9d;
+    color: black;
+    font-weight: bold;
     margin-top: 2rem;
 }
 

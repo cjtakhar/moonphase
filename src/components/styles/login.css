@@ -37,6 +37,10 @@
     width: 15rem;
     text-align: center;
   }
+
+  .input:focus {
+    outline: none;
+  }
   
   .btn-container {
     display: flex;
