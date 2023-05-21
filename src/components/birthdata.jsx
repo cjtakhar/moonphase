@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import Image from "./images/thumbprint.jpg";
 import './styles/bd.css';
 
@@ -9,10 +9,12 @@ const BirthData = () => {
   const [hour, setHour] = useState("");
   const [minute, setMinute] = useState("");
   const [location, setLocation] = useState("");
+  const buttonRef = useRef(null);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(day, month, year, hour, minute, location);
+    buttonRef.current.focus();
   }
 
   const handleDay = (e) => {
@@ -45,7 +47,17 @@ const BirthData = () => {
     <div className="bd-container">
       <div className="bd-intro">
         <h1 className="bd-title">You are cosmic.</h1>
-        <p className="bd-paragraph">The fundamental particles that forged the univere are the intricate composition of our being.</p>
+        <p className="bd-paragraph">The fundamental particles that forged the universe are the intricate composition of our being. </p>
+        <div className="btn-container">
+          {isDataEntered && (
+            <>
+              <button className="form-btn" ref={buttonRef}> 
+                <img src={Image} alt="cosmic thumbprint" />
+              </button>
+              <h2 className="btn-label">PRESS</h2>
+            </>
+          )}
+        </div>
       </div>
       <form className="bd-form" onSubmit={handleSubmit}>
         <div className="first-container">
@@ -57,16 +69,6 @@ const BirthData = () => {
           <input className="bd-input" type="number" placeholder="Hour" value={hour} onChange={handleHour} />
           <input className="bd-input" type="number" placeholder="Minute" value={minute} onChange={handleMinute} />
           <input className="bd-input" type="text" placeholder="Location" value={location} onChange={handleLocation} />
-        </div>
-        <div className="btn-container">
-          {isDataEntered && (
-            <>
-              <button className="form-btn">
-                <img src={Image} alt="cosmic thumbprint" />
-              </button>
-              <h2 className="btn-label">PRESS</h2>
-            </>
-          )}
         </div>
       </form>
     </div>

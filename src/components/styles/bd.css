@@ -23,7 +23,7 @@
 
 .bd-paragraph {
     font-size: 1.5rem;
-    color: black;
+    color: #453e74;
     font-weight: bold;
     margin-top: 2rem;
 }
@@ -63,7 +63,14 @@
     border: solid 1px;
     border-radius: 5px;
     padding: 1rem;
+    box-shadow: 0 0 5px 5px black;
+  
+    outline: none;
+}
+
+.form-btn:hover {
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    transition: box-shadow 0.3s ease;
 }
 
 .btn-label {
@@ -101,48 +108,53 @@
 
 @media (max-width: 768px) {
     .bd-container {
-        flex-direction: column; 
-        justify-content: center;
-        align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
-
+  
     .bd-intro {
-        padding: 0;
-        margin: 0;
-        height: 35vh;
+      padding: 0;
+      margin: 0;
+      height: 35vh;
     }
-
+  
     .bd-title {
-        text-align: center;
-        margin: 0;
-        padding: 1rem;
+      text-align: center;
+      margin: 0;
+      padding: 1rem;
     }
-
+  
     .bd-paragraph {
-        margin: 1rem;
-        width: auto;
-
+      margin: 2rem;
+      width: auto;
     }
-
+  
     .bd-form {
-        padding: 0rem;
-        margin: 0;
-        height: auto;
-        width: auto;
+      padding: 0rem;
+      margin: 0;
+      height: auto;
+      width: auto;
     }
 
-    .form {
-        padding: 0;
-        height: auto;
+    .bd-input {
+        text-align: center;
     }
-
-}
+  
+    .btn-container {
+      margin-top: 38rem; /* Add margin-top to create space between form and button */
+      text-align: center;
+      order: 2; /* Change the order of the element to appear after the form */
+    }
+  }
+  
 
 @media (max-width: 543px) {
     .bd-container {
         flex-direction: column; 
         justify-content: center;
         align-items: center;
+        width: auto;
     }
 
     .bd-intro {
@@ -152,16 +164,22 @@
 
     .bd-title {
         text-align: center;
+        width: auto;
     }
 
     .bd-paragraph {
-        padding:0 2rem;
+        padding:0;
+        width: auto;
     }
 
     .bd-form {
-        width: auto;
         padding: 0;
         margin: 0;
+    }
+
+    .bd-input {
+        width: auto;
+        text-align: center;
     }
 
     .bd-input::placeholder {
