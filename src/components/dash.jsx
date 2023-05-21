@@ -13,10 +13,6 @@ const Dash = () => {
                 <button className="btn-join">Join Now</button>
                 </Link>
                 </div>
-                
-            </div>
-            <div className="box2">
-
             </div>
         </div>
     )
