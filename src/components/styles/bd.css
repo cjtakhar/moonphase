@@ -1,0 +1,169 @@
+.bd-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+}
+
+.bd-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50vw;
+    height: 100vh;
+    margin: 4rem;
+}
+
+.bd-title {
+    font-size: 5rem;
+    font-weight: bold;
+    color: #453e74;
+}
+
+.bd-paragraph {
+    font-size: 1.5rem;
+    color: #746f9d;
+    margin-top: 2rem;
+}
+
+.bd-form {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 50vw;
+    height: 100vh;
+}
+
+.bd-input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid 5px #453e74;
+    font-size: 3rem;
+    color: #453e74;
+}
+
+.bd-input:focus {
+    outline: none;
+    color: #453e74;
+}
+
+.bd-input::placeholder {
+    color: #453e74;
+    font-weight: bold;
+}
+
+.form-btn {
+    margin: 1rem;
+    border: none;
+    background-color: #453e74;
+    cursor: pointer;
+    border: solid 1px;
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+
+.btn-label {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #453e74;
+}
+
+@media (max-width: 1024px) {
+    .bd-container {
+        flex-direction: row; 
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bd-intro {
+        width: auto;
+    }
+
+    .bd-title {
+        text-align: center;
+    }
+
+    .bd-paragraph {
+        padding: 0;
+       
+    }
+
+    .bd-form {
+        height: 100vh;
+        text-align: center;
+        margin-right: 2rem;
+    } 
+}
+
+@media (max-width: 768px) {
+    .bd-container {
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bd-intro {
+        padding: 0;
+        margin: 0;
+        height: 35vh;
+    }
+
+    .bd-title {
+        text-align: center;
+        margin: 0;
+        padding: 1rem;
+    }
+
+    .bd-paragraph {
+        margin: 1rem;
+        width: auto;
+
+    }
+
+    .bd-form {
+        padding: 0rem;
+        margin: 0;
+        height: auto;
+        width: auto;
+    }
+
+    .form {
+        padding: 0;
+        height: auto;
+    }
+
+}
+
+@media (max-width: 543px) {
+    .bd-container {
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bd-intro {
+        width: auto;
+        height: 50vh;
+    }
+
+    .bd-title {
+        text-align: center;
+    }
+
+    .bd-paragraph {
+        padding:0 2rem;
+    }
+
+    .bd-form {
+        width: auto;
+        padding: 0;
+        margin: 0;
+    }
+
+    .bd-input::placeholder {
+        text-align: center;
+    }
+}

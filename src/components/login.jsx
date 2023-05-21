@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./styles/login.css";
 
 const Login = () => {
@@ -6,6 +7,8 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const [error, setError] = useState(false);
   const [isLogin, setIsLogin] = useState(true);
+
+  const navigate = useNavigate();
 
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
@@ -21,6 +24,7 @@ const Login = () => {
       setError(true);
     } else {
       setError(false);
+      navigate("/enter-data");
     }
   };
 
